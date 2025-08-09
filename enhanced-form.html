@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+    <h1>HTML5 Enhanced Form Showcase</h1>
+
+    <section>
+        <h2>Technologies</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+
+        <h2>Steps</h2>
+        <ol>
+            <li>Planning</li>
+            <li>Design</li>
+            <li>Development</li>
+            <li>Testing</li>
+        </ol>
+
+        <h2>Projects</h2>
+        <table border="1">
+            <tr>
+                <th>Project</th>
+                <th>Tech</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td>HTML/CSS</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td>App</td>
+                <td>React</td>
+                <td>Progress</td>
+            </tr>
+        </table>
+
+        <h2>Media</h2>
+        
+        <div>
+            <h3>Project Screenshot</h3>
+            <img src="https://i.pinimg.com/736x/6a/62/bc/6a62bcde3cd0c3740460f411cc066427.jpg" alt="HTML" width="400" height="250">
+            <p>Sample project interface design</p>
+        </div>
+        
+        <div>
+            <h3>Audio Sample</h3>
+            <audio controls>
+                <source src="source/01. ...Ready For It.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+            <p>Notification sound for web applications</p>
+        </div>
+        
+        <div>
+            <h3>Video Demo</h3>
+            <video controls width="350" height="200">
+                <source src="source/WhatsApp Video 2025-08-09 at 17.32.42.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <p>Application walkthrough demonstration</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+                
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" required minlength="2" placeholder="First name" autocomplete="given-name">
+
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" required minlength="2" placeholder="Last name" autocomplete="family-name">
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="email@example.com" autocomplete="email">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" autocomplete="tel">
+
+                <label for="bdate">Birth Date</label>
+                <input type="date" id="bdate" name="bdate" min="1950-01-01" max="2006-12-31">
+            </fieldset>
+
+            <fieldset>
+                <legend>Account</legend>
+                
+                <label for="username">Username *</label>
+                <input type="text" id="username" name="username" required minlength="3" pattern="[a-zA-Z0-9_]+" placeholder="Username" autocomplete="username">
+
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" required minlength="8" placeholder="Password" autocomplete="new-password">
+
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com" autocomplete="url">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <label for="country">Country *</label>
+                <select id="country" name="country" required>
+                    <option value="">Choose country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                </select>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="13" max="120">
+
+                <label>Experience Level *</label>
+                <input type="radio" id="beginner" name="level" value="beginner" required>
+                <label for="beginner">Beginner</label>
+                <input type="radio" id="advanced" name="level" value="advanced">
+                <label for="advanced">Advanced</label>
+
+                <label>Skills</label>
+                <input type="checkbox" id="html" name="skills" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css">CSS</label>
+
+                <label for="salary">Salary Range</label>
+                <input type="range" id="salary" name="salary" min="30000" max="100000" value="50000">
+
+                <label for="color">Theme Color</label>
+                <input type="color" id="color" name="color" value="#0066cc">
+
+                <label for="resume">Resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf">
+
+                <label for="start">Start Date</label>
+                <input type="datetime-local" id="start" name="start">
+
+                <label for="code">Referral Code</label>
+                <input type="text" id="code" name="code" value="REF2025" readonly>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="3" maxlength="500" placeholder="Your comments"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Terms</legend>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to terms *</label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
